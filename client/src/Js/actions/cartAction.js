@@ -12,8 +12,8 @@ export const addTOCart =
     try {
       console.log(quantity)
       let result = await axios.get(`product/${id}`)
-      let final = { ...result.data.result, quantity }
-      dispatch({ type: ADD_ITEMS_SUCCESS, payload: final })
+      let final = { ...result.data.result }
+      dispatch({ type: ADD_ITEMS_SUCCESS, payload: { final, quantity } })
     } catch (error) {
       console.log(error)
     }

@@ -84,8 +84,8 @@ const Panier = () => {
                         }}
                       >
                         <div className='content-cart'>
-                          <img src={el.image?.im1}></img>
-                          <h6>{el.name}</h6>
+                          <img src={el.final.image?.im1}></img>
+                          <h6>{el.final.name}</h6>
                         </div>
                         <div>
                           <div
@@ -97,33 +97,18 @@ const Panier = () => {
                               marginBottom: '80px',
                             }}
                           >
-                            <h5 className='pricee'> {el.prix}</h5>
+                            <h5 className='pricee'> {el.final.prix}</h5>
 
                             <div className='quantie_panier'>
-                              <button
-                                className='minus-btn'
-                                onClick={decreaseQuantity}
-                              >
-                                -
-                              </button>
                               <input
                                 type='text'
                                 className='Quant'
                                 value={quantity ? quantity : el.quantity}
                               />
-                              <button
-                                class='plus-btn'
-                                id='max1'
-                                onClick={increaseQuantity}
-                              >
-                                +
-                              </button>
                             </div>
 
                             <h5>
-                              {quantity
-                                ? parseInt(el.prix) * quantity
-                                : parseInt(el.prix) * el.quantity}
+                              {parseInt(el.final.prix) * el.quantity}
                               DT
                             </h5>
                           </div>
