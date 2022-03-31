@@ -1,0 +1,16 @@
+export const GET_PRODUCT = 'GET_PRODUCT '
+export const GET_ONE_PRODUCT = 'GET_ONE_PRODUCT '
+export const GET_PRODUCT_SUCCESS = 'GET_PRODUCT_SUCCESS '
+export const GET_ONE_SUCCESS = 'GET_ONE_SUCCESS '
+export const GET_PRODUCT_FAIL = 'GET_PRODUCT_FAIL '
+
+export const ADD_PRODUCT = 'ADD_PRODUCT '
+export const DELETE_PRODUCT = 'DELETE_PRODUCT '
+export const UPDATE_PRODUCT = 'UPDATE_PRODUCT '
+export const UPDATE_PRODUCT_FAIL = 'UPDATE_PRODUCT_FAIL '
+
+
+
+
+
+export const ADD_TO_CART = 'ADD_TO_CART'

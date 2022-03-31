@@ -1,0 +1,79 @@
+.orderdetails {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 60%;
+  margin-left: 250px;
+}
+.img-orderdetail img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.prod-detail {
+  display: flex;
+  justify-content: space-around;
+}
+.prod-detail h4 {
+  color: rgb(53, 52, 52);
+  font-size: small;
+}
+.prod-detail h3 {
+  color: rgb(53, 52, 52);
+  font-size: small;
+}
+.tablee {
+  width: 80%;
+  align-items: center;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.tablee td {
+  width: 50%;
+  border-left: 1px solid #c37365;
+}
+.order-p {
+  border-top: #c37365 1px solid;
+  height: 120px;
+}
+
+.user_info {
+  text-align: center;
+  margin-top: 20px;
+}
+.user_info h1 {
+  color: #c37365;
+  font-family: 'Times New Roman', Times, serif;
+}
+.user-div {
+  border: none !important;
+}
+.user_info p {
+  font-size: large;
+  margin-top: 20px;
+  font-family: serif;
+  color: (44, 43, 43);
+}
+.img-orderdetail {
+  text-align: center;
+}
+.img-orderdetail h1 {
+  color: #c37365;
+  font-family: 'Times New Roman', Times, serif;
+}
+.order-p h4 {
+  color: rgb(53, 52, 52);
+  font-size: small;
+  margin-bottom: 10px;
+}
+.order-p button {
+  margin-top: 5px;
+  background-color: white;
+  border: 1px solid #c37365;
+}
+.order-p button:hover {
+  background-color: #c37365;
+  color: white;
+}

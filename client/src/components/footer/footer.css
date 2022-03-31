@@ -1,0 +1,67 @@
+.footeer {
+  width: 100%;
+  height: 250px;
+  background-color: #c37365;
+  display: flex;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+.footeer h3 {
+  color: #dabf9e;
+  font-size: x-large;
+  /* font-style: oblique; */
+  margin: 0;
+  /* padding-bottom: 1px;  */
+}
+.footeer h6 {
+  color: rgb(87, 83, 83);
+  margin: 8px;
+  padding: 2px;
+  font-size: 12px;
+}
+.footeer h6:hover {
+  transform: scale(1.1);
+  color: #c0ab91;
+}
+.f-link {
+  text-decoration-color: #8f7f6a;
+}
+
+.bloccc {
+  width: 20%;
+  padding: 2%;
+  margin: 0%;
+}
+.suivez {
+  width: 13% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.suivez h3 {
+  width: 100%;
+}
+
+.socio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* width: 100%; */
+  color: #e2c9aa;
+  margin-bottom: 70px;
+}
+.text {
+  text-align: center;
+  width: 32%;
+  margin-bottom: 50px;
+}
+.icoons {
+  width: 45px;
+  height: 30px;
+  padding: 15%;
+}
+.icoons :hover {
+  color: #8f7f6a;
+}

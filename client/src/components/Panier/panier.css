@@ -1,0 +1,199 @@
+ /* .panier-form{
+border: 1px solid #e2c9aa;
+  margin: 10px 250px;
+ margin-top: 60px;
+text-align: center;
+width: 800px;
+ }  
+ .panier-form h4{
+ border-top: 1px solid #e2c9aa;
+ border-bottom: 1px solid #e2c9aa;
+} 
+ .card-panier img{
+ width: 100px;
+ height: 100px;
+
+} 
+ .card-panier{
+ display: flex;
+ justify-content: space-evenly;
+ margin: 0;
+ border-bottom: 1px solid #e2c9aa;
+
+} 
+/* .panier-desc{
+
+ padding: 0;
+ margin-bottom: 30px;
+ background-color: red; 
+ width: 50%;
+ height: 250px; 
+}   */
+
+ /* .qnt input{
+ width: 30px;
+ height: 15px;
+
+}  
+
+ .panier-form button{
+ border: 1px solid #e2c9aa;
+ background-color: white;
+ margin-bottom: 10px;
+ align-items: center;
+ border-radius: 2px;
+} 
+ .close{
+ margin-left: 750px;
+ color: #e2c9aa;
+ margin-top: 30px;
+} 
+.panier-desc{
+
+  text-align: center;
+margin: 0 ;
+height: 170px;
+width: 250px;
+}
+.panier-desc h6{
+
+  margin: 0 auto;
+  
+}  */
+
+
+.cart-det{
+  display: flex;
+margin: 0 30px;
+  justify-content: space-between;
+}
+.cart-det h1{
+  font-size: large;
+  font-family:'Courier New', Courier, monospace;
+  color:#c37365;
+}
+
+.content-page {
+  display: flex;
+  justify-content: space-evenly ;
+  width: 100%;
+}
+.main-content {
+  width: 90%;
+  background-color: #fefefe;
+  padding: 12px;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 100px;
+}
+.content-panier {
+  display: flex;
+  flex-direction: column;
+}
+.price-button {
+  display: flex;
+}
+.price-button .pricee {
+  margin-right: 280px;
+}
+.content-cart1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 12px;
+  border-top: 1px solid rgb(218, 218, 218);
+  position: relative;
+}
+
+.content-cart1 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+.content-cart11 {
+  border-top: 1px solid rgb(218, 218, 218);
+  border-bottom: 1px solid rgb(218, 218, 218);
+  padding: 12px;
+}
+.content-cart {
+  display: flex;
+}
+.content-cart > * {
+  margin-left: 15px;
+}
+.content-cart h1{
+  color: rgb(54, 54, 54);
+}
+.resume-panier {
+  width: 25%;
+  height: 300px;
+  background-color: #fefefe;
+  padding: 12px;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.content-page h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.content-page h4 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+}
+.content-plus-munis {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.content-plus-munis h5 {
+  margin: 0px 10px;
+}
+.price-button {
+  margin-right: 25px;
+}
+.buutn{
+      background-color: white;
+    border: 1px solid #c37365;
+    height: 40px;
+}
+.buutn:hover{
+  background-color: #c37365;
+  color: white;
+}
+.btn{
+
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-cart h6{
+ 
+  margin-top: 45px;
+}
+
+.quantie_panier{
+  background-color: brown;
+  display: flex;
+  height: 20px;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+.quantie_panier input{
+  width: 15px;
+    border: 1px solid #c37365;
+    text-align: center;
+
+}
+.quantie_panier button{
+  background-color: #c37365;
+  border: 1px solid #c37365;
+}
+ .panier-form{
+  display: flex;
+  border-top: 1px solid #c37365;
+  margin-top: 10px;
+
+}  
