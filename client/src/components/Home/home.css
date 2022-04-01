@@ -124,7 +124,7 @@
 .break-line {
   margin-top: 5%;
   height: 10px;
-  background-color: #32413c;
+  background-color: #c37365;
 }
 .card-avis {
   width: 80%;
@@ -227,4 +227,7 @@
 .article-nav :link {
   text-decoration: none;
  
+}
+a{
+  color: #e2bfa1;
 }

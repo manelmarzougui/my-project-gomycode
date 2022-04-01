@@ -54,6 +54,7 @@ const Nav = () => {
               <h6>Panier</h6>
             </Link>
           </div>
+          
         </div>
       </div>
       <div className='liste'>

@@ -20,7 +20,6 @@ const OrderDetail = () => {
   const dispatch = useDispatch()
   return (
     <div>
-      
       <div className='orderdetails'>
         <table className='tablee'>
           <td className='user-div'>
@@ -33,10 +32,10 @@ const OrderDetail = () => {
           </td>
           <td>
             <div className='img-orderdetail'>
-              <h1>List Des Produits</h1>{' '}
+              <h1>List Des Produits</h1>
               {cartItems.map((el) => (
                 <div className='prod-detail'>
-                  <img src={el.image.im1} alt='' />
+                  <img src={el.final.image.im1} alt='' />
                   <h4>{el.name}</h4>
                   <h3>{el.prix}DT</h3>
                 </div>

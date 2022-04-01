@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { CgClose } from 'react-icons/cg'
+import { IoIosAddCircle } from 'react-icons/io'
 import { useNavigate } from 'react-router'
 
 import './shipping.css'
@@ -8,9 +10,11 @@ const Shipping = () => {
     adress: '',
     codepostal: '',
   })
+  const [show, setshow] = useState(false)
   const navigate = useNavigate()
   return (
     <div className='shipping'>
+      
       <h1>Informations D'expédition</h1>
       <div className='ship-nam'>
         <span>Name:</span>

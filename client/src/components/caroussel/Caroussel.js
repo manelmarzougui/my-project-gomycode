@@ -59,7 +59,7 @@ function Caroussel() {
       >
         <Carousel
           data={data}
-          time={2000}
+          time={1000}
           width='1400px'
           height='500px'
           showNavBtn={false}
