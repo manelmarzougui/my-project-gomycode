@@ -30,7 +30,7 @@ const Mariage = () => {
                 id='volume'
                 name='volume'
                 min='0'
-                max='1000'
+                max='10000'
                 onChange={(e) => setPrixFiltre(parseInt(e.target.value))}
               ></input>
               <span>{prixFiltre} DT</span>
