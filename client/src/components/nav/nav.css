@@ -42,12 +42,12 @@ font-family: 'Shadows Into Light', cursive;
 }
 
 .icons {
-  width: 10%;
+  width: 13%;
   height: 45px;
 
   margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+   justify-content: space-around; 
   align-items: center;
 }
 .icon {

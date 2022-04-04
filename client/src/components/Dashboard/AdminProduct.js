@@ -20,8 +20,9 @@ const AdminProduct = ({ product }) => {
       <table>
         <tr>
           <th>Name</th>
-          <th>prix</th>
+          <th>Prix</th>
           <th>Quantite</th>
+          <th>Category</th>
           <th className='action-act'>Action</th>
         </tr>
         {products?.map((el) => (
@@ -29,6 +30,7 @@ const AdminProduct = ({ product }) => {
             <td>{el?.name}</td>
             <td>{el?.prix}</td>
             <td>{el?.quantite}</td>
+            <td>{el?.category}</td>
             <td className='action'>
               <ModaleEdit product={el} />
               {console.log(el)}

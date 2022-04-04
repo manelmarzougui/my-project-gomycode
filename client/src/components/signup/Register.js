@@ -51,7 +51,7 @@ const Register = () => {
               dispatch(
                 registerUser(
                   { name, lastName, email, password, adresse },
-                  navigate('/dashboard')
+                  navigate('/')
                 )
               )
             }

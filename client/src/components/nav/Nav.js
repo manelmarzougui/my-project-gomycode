@@ -3,17 +3,23 @@ import { MdOutlineAccountCircle } from 'react-icons/md'
 import { FaRegHeart } from 'react-icons/fa'
 import { FiShoppingBag } from 'react-icons/fi'
 import { BiSearchAlt2 } from 'react-icons/bi'
+import { AiOutlineLogout } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import Panier from '../Panier/Panier'
 import './nav.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { current } from '../../Js/actions/userAction'
 
+import { useNavigate } from 'react-router'
+
 const Nav = () => {
+
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(current())
   }, [])
+  
+    const navigate = useNavigate()
   const [showPanier, setShowPanier] = useState(false)
   const currentuser = useSelector((state) => state.userReducer.user)
   return (
@@ -47,6 +53,7 @@ const Nav = () => {
             <FaRegHeart className='ico' />
             <h6>Favoris</h6>
           </div>
+
           <div className='icon'>
             <Link to='/panier'>
               <FiShoppingBag className='ico' />
@@ -54,7 +61,16 @@ const Nav = () => {
               <h6>Panier</h6>
             </Link>
           </div>
-          
+          <div className='icon'>
+            <AiOutlineLogout
+              className='ico'
+              onClick={() => {
+                localStorage.removeItem('token')
+                navigate('/login')
+              }}
+            />
+            <h6> Logout</h6>
+          </div>
         </div>
       </div>
       <div className='liste'>

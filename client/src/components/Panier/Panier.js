@@ -8,12 +8,15 @@ import { getorder } from '../../Js/actions/orderaction'
 import { current } from '../../Js/actions/userAction'
 import { Link, useNavigate } from 'react-router-dom'
 import { getItems } from '../../Js/actions/cartAction'
+
+import { CgClose } from 'react-icons/cg'
 const Panier = () => {
   const [prod, setprod] = useState({})
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(current())
   }, [])
+    const [show, setshow] = useState(false)
   const items = useSelector((state) => state.cartReducer.cart)
   console.log(items)
   const orders = useSelector((state) => state.productListe.orderListe)
@@ -67,6 +70,7 @@ const Panier = () => {
                     cursor: 'pointer',
                   }}
                 ></ion-icon>
+
                 <div
                   className='content-cart'
                   style={{
@@ -75,6 +79,7 @@ const Panier = () => {
                     // marginRight: '400px',
                   }}
                 >
+        
                   {items.length ? (
                     items.map((el) => (
                       <div

@@ -67,10 +67,6 @@ function App() {
       </Routes>
       <Footer />
 
-      {/* {products ? (
-      products.map(el=><Productcard product={el}/>)
-    ):(<h3>loading</h3>)}
- */}
     </div>
   )
 }

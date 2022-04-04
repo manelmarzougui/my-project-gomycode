@@ -42,7 +42,7 @@ const Dashboard = () => {
         <div className='doughnutChart'>
           {/* <Doughnut data={doughnutState} /> */}
         </div>
-        <button
+        {/* <button
           className='logout_btn'
           onClick={() => {
             localStorage.removeItem('token')
@@ -50,7 +50,7 @@ const Dashboard = () => {
           }}
         >
           logout
-        </button>
+        </button> */}
       </div>
     </div>
   )

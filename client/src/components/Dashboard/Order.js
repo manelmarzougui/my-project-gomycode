@@ -35,7 +35,7 @@ const Order = () => {
 
             <td className='action'>
               <Link to='/orderdetail'>
-                <CgDetailsMore className='delete-ico' />
+                {/* <CgDetailsMore className='delete-ico' /> */}
               </Link>
               <MdDelete
                 className='delete-ico'

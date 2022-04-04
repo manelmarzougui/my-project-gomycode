@@ -5,13 +5,10 @@ import { useDispatch } from 'react-redux'
 import { CgClose } from 'react-icons/cg'
 import { IoIosAddCircle } from 'react-icons/io'
 
-
-
 const AddModel = () => {
- 
   const dispatch = useDispatch()
   const [images, setimages] = useState([])
-    const [show, setshow] = useState(false)
+  const [show, setshow] = useState(false)
   const [NewProduct, setNewProduct] = useState({
     name: '',
     image: {},
@@ -25,6 +22,7 @@ const AddModel = () => {
       <IoIosAddCircle className='update_ico' onClick={() => setshow(!show)} />
       {show ? (
         <div className='addmodale'>
+    
           <CgClose onClick={() => setshow(!show)} className='close-update' />
           <div className='inpt-name'>
             <h4>Name:</h4>{' '}

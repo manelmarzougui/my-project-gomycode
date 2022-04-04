@@ -13,7 +13,7 @@ const OrderDetail = () => {
   const user = useSelector((state) => state.userReducer.user)
   console.log(cartItems)
   const totalPrice = cartItems.reduce(
-    (totalPrice, item) => totalPrice + parseInt(item.prix),
+    (totalPrice, item) => totalPrice + parseInt(item.final.prix),
     0
   )
   console.log(user)
@@ -36,8 +36,9 @@ const OrderDetail = () => {
               {cartItems.map((el) => (
                 <div className='prod-detail'>
                   <img src={el.final.image.im1} alt='' />
-                  <h4>{el.name}</h4>
-                  <h3>{el.prix}DT</h3>
+                  <h4>{el.final.name}</h4>
+                  {console.log(el)}
+                  <h3>{el.final.prix}DT</h3>
                 </div>
               ))}
               <div className='order-p'>

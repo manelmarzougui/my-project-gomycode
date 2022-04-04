@@ -5,13 +5,10 @@
  /* height: 100vh; */
 
 border: 1px solid #e2c9aa;
- margin-top: 150px; 
+ margin-top: 130px; 
  display: flex;
  flex-direction: column;
  margin: 0 auto;
-
-
- 
 }
 .addmodale button{
  width: 60px;
@@ -31,6 +28,9 @@ width: 400px;
 .addmodale h4{
  margin-left: 60px;
  color: rgb(61, 60, 60);
+}
+.addmodale input{
+  outline: none;
 }
 .inpt-name{
   display: flex;
@@ -149,13 +149,10 @@ flex-direction: column;
 
 
 /* admin product*/
- .adminproduct{
 
-
-}
 .adminproduct th{
   
-  width: 30%;
+  width: 22%;
   padding: 5px;
    border-bottom: 1px solid #e2c9aa; 
    border-left: 1px solid #e2c9aa;

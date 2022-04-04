@@ -13,9 +13,13 @@ const Shipping = () => {
   const [show, setshow] = useState(false)
   const navigate = useNavigate()
   return (
+    
     <div className='shipping'>
       
+      <CgClose onClick={() => setshow(!show)} className='close-update' />
+
       <h1>Informations D'expédition</h1>
+      
       <div className='ship-nam'>
         <span>Name:</span>
         <input
@@ -54,6 +58,7 @@ const Shipping = () => {
       >
         order detail
       </button>
+          
     </div>
   )
 }
