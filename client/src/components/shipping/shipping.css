@@ -1,51 +1,63 @@
-.shipping{
- display: flex;
- flex-direction: column;
- align-items: center;
-width: 40%;
-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-margin: 50px 450px;
+.shipping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  margin: 50px 450px;
 }
-.shipping input{
- width: 300px;
- margin-top: 20px;
-  border:1px solid #c37365;
+.shipping input {
+  width: 300px;
+  margin-top: 10px;
+  border: 1px solid #c37365;
   outline: none;
   margin-left: 5px;
+  padding: 1%;
 }
-.shipping h1{
- color: #3f3f3f;
- font-family: var(--heading-font-family);
-     font-weight: var(--heading-font-weight);
-         font-style: var(--heading-font-style);
- margin-top: 20px;
+.shipping h1 {
+  color: #3f3f3f;
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  margin-top: 20px;
 }
-.shipping button{
- margin-top: 30px;
- margin-bottom: 20px;
+.shipping button {
+  width: 25%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 1%;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: rgba(66, 65, 65, 0.836) !important;
 }
-.shipping button{
- border: 1px solid #c37365;
- background-color:white;
+.shipping button {
+  background-color: white;
+  background-color: #c37365;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
-.shipping button:hover{
- background-color: #c37365;
- color: rgb(54, 53, 53);
+.shipping button:hover {
+  border: 1px solid #c37365;
+  transform: scale(1.1);
 }
-.ship-nam{
+.ship-nam {
+  width: 90%;
   display: flex;
-  margin: 0;
+  justify-content: space-around;
+  margin: 0 auto;
   padding: 0;
   height: 40px;
-  
 }
-.ship-nam span{
-margin: 20px 5px;
-color: rgb(56, 58, 58);
-font-size: small;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.ship-nam span {
+  width: 100px;
+  margin: 20px 5px;
+  color: rgb(56, 58, 58);
+  font-size: small;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-}
-.close-update{
+.close-update {
   margin-right: 150px;
 }

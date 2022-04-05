@@ -4,22 +4,23 @@ import { IoIosAddCircle } from 'react-icons/io'
 import { useNavigate } from 'react-router'
 
 import './shipping.css'
+
 const Shipping = () => {
   const [shipping, setshipping] = useState({
     name: '',
     adress: '',
     codepostal: '',
   })
-  const [show, setshow] = useState(false)
+  // const [show, setshow] = useState(true)
   const navigate = useNavigate()
+
   return (
-    
+
     <div className='shipping'>
-      
-      <CgClose onClick={() => setshow(!show)} className='close-update' />
+      {/* <CgClose onClick={() => setshow(!show)} className='close-update' /> */}
 
       <h1>Informations D'expédition</h1>
-      
+
       <div className='ship-nam'>
         <span>Name:</span>
         <input
@@ -56,11 +57,9 @@ const Shipping = () => {
           localStorage.setItem('shipping', JSON.stringify(shipping))
         }}
       >
-        order detail
+        Order Detail
       </button>
-          
     </div>
-  )
-}
-
+  ) 
+      }
 export default Shipping

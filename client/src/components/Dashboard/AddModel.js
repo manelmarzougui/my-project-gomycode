@@ -18,14 +18,12 @@ const AddModel = () => {
   })
 
   return (
-    <div>
+    <div className='modalBackground'>
       <IoIosAddCircle className='update_ico' onClick={() => setshow(!show)} />
       {show ? (
         <div className='addmodale'>
-    
           <CgClose onClick={() => setshow(!show)} className='close-update' />
           <div className='inpt-name'>
-            <h4>Name:</h4>{' '}
             <input
               placeholder='name'
               required
@@ -35,7 +33,6 @@ const AddModel = () => {
             />
           </div>
           <div className='inpt-name'>
-            <h4>Image:</h4>{' '}
             <div className='grp_img'>
               <input
                 placeholder='image'
@@ -70,7 +67,6 @@ const AddModel = () => {
             </div>
           </div>
           <div className='inpt-name'>
-            <h4> Prix:</h4>
             <input
               placeholder='prix'
               required
@@ -80,7 +76,6 @@ const AddModel = () => {
             />
           </div>
           <div className='inpt-name'>
-            <h4>category:</h4>
             <input
               placeholder='category'
               required
@@ -90,7 +85,6 @@ const AddModel = () => {
             />
           </div>
           <div className='inpt-name'>
-            <h4>description:</h4>
             <input
               placeholder='description'
               required
@@ -100,7 +94,6 @@ const AddModel = () => {
             />
           </div>
           <div className='inpt-name'>
-            <h4>Qnt:</h4>
             <input
               placeholder='Qnt'
               required

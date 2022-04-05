@@ -35,10 +35,10 @@ const OrderDetail = () => {
               <h1>List Des Produits</h1>
               {cartItems.map((el) => (
                 <div className='prod-detail'>
-                  <img src={el.final.image.im1} alt='' />
-                  <h4>{el.final.name}</h4>
+                  <img src={el?.final?.image?.im1} alt='' />
+                  <h4>{el?.final?.name}</h4>
                   {console.log(el)}
-                  <h3>{el.final.prix}DT</h3>
+                  <h3>{el?.final?.prix}DT</h3>
                 </div>
               ))}
               <div className='order-p'>

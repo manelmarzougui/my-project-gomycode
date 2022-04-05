@@ -16,7 +16,7 @@ const Panier = () => {
   useEffect(() => {
     dispatch(current())
   }, [])
-    const [show, setshow] = useState(false)
+  const [show, setshow] = useState(false)
   const items = useSelector((state) => state.cartReducer.cart)
   console.log(items)
   const orders = useSelector((state) => state.productListe.orderListe)
@@ -61,16 +61,6 @@ const Panier = () => {
             </div>
             <div className='content-panier'>
               <div className='content-cart1'>
-                <ion-icon
-                  name='close-sharp'
-                  style={{
-                    position: 'absolute',
-                    marginLeft: '700px',
-                    marginTop: '-50px',
-                    cursor: 'pointer',
-                  }}
-                ></ion-icon>
-
                 <div
                   className='content-cart'
                   style={{
@@ -79,41 +69,39 @@ const Panier = () => {
                     // marginRight: '400px',
                   }}
                 >
-        
                   {items.length ? (
                     items.map((el) => (
                       <div
                         style={{
                           display: 'flex',
-                          marginRight: '20px',
                         }}
                       >
-                        <div className='content-cart'>
-                          <img src={el.final.image?.im1}></img>
-                          <h6>{el.final.name}</h6>
+                        <div className='content-cart-1'>
+                          <img src={el?.final?.image?.im1}></img>
+                          <h6>{el?.final?.name}</h6>
                         </div>
                         <div>
                           <div
                             className='price-button'
                             style={{
                               display: 'flex',
-                              marginLeft: '200px',
+                              marginLeft: '180px',
 
-                              marginBottom: '80px',
+                              marginBottom: '10px',
                             }}
                           >
-                            <h5 className='pricee'> {el.final.prix}</h5>
+                            <h5 className='pricee'> {el?.final?.prix}</h5>
 
                             <div className='quantie_panier'>
                               <input
                                 type='text'
                                 className='Quant'
-                                value={quantity ? quantity : el.quantity}
+                                value={quantity ? quantity : el?.quantity}
                               />
                             </div>
 
                             <h5>
-                              {parseInt(el.final.prix) * el.quantity}
+                              {parseInt(el?.final?.prix) * el?.quantity}
                               DT
                             </h5>
                           </div>

@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 
 const Bagues = () => {
   const [text, settext] = useState('')
-   const [prixFiltre, setPrixFiltre] = useState(0)
+  const [prixFiltre, setPrixFiltre] = useState(0)
   const products = useSelector((state) => state.productListe.productListe)
   console.log(products)
   return (
@@ -28,6 +28,7 @@ const Bagues = () => {
             <button>100DT</button> */}
             <div className='range'>
               <input
+                className='range-css'
                 type='range'
                 id='volume'
                 name='volume'

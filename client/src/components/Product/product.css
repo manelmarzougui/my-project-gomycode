@@ -3,11 +3,11 @@ h2 {
   color: #c37365;
   text-align: center;
   margin-top: 50px;
-   font-family: var(--heading-font-family);
-     font-weight: var(--heading-font-weight);
-         font-style: var(--heading-font-style);
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
 }
-.pg-prod{
+.pg-prod {
   border-top: 1px solid #c37365;
   margin-top: 5px;
 }
@@ -27,9 +27,9 @@ h2 {
   margin: 0;
   margin-top: 7px;
   color: rgb(58, 56, 56);
-   font-family: var(--heading-font-family);
-     font-weight: var(--heading-font-weight);
-         font-style: var(--heading-font-style);
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
 }
 .procard {
   display: flex;
