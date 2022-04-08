@@ -38,40 +38,40 @@ function Featured() {
       responsive={responsive}
     >
       <div className='solide'>
-        <Link to='/description'>
+        
           <img className='imagees' src='./image/image1.jpeg' />
-        </Link>
+      
         <p>Bagues</p>
         {/* <div className="price">20.000DT</div> */}
       </div>
 
       <div className='solide'>
-        <Link to='/description'>
+       
           <img className='imagees' src='./image/image2.jpg' />
-        </Link>
+        
         <p>Collier</p>
         {/* <div className="price">35.500DT</div> */}
       </div>
       <div className='solide'>
-        <Link to='/description'>
+        
           <img className='imagees' src='./image/image3.png' />
-        </Link>
-        <p>Love me</p>
+     
+        <p>Collier</p>
         {/* <div className="price">39.900DT</div> */}
       </div>
       <div className='solide'>
-        <Link to='/description'>
+       
           <img className='imagees' src='./image/image4.jpeg' />
-        </Link>
+        
         <p>Boucle</p>
         {/* <div className="price">19.500DT</div> */}
       </div>
 
       <div className='solide'>
-        <Link to='/description'>
+     
           <img className='imagees' src='./image/image6.jpeg' />
-        </Link>
-        <p>Colliers</p>
+       
+        <p>Bagues</p>
         {/* <div className="price">32.000DT</div> */}
       </div>
     </Carousel>
