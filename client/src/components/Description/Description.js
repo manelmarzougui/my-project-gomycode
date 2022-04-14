@@ -89,13 +89,13 @@ const Description = () => {
           </div>
 
           <div className='desc-butn'>
-            {currentuser ? (
+            {/* {currentuser ? ( */}
               <button onClick={addToCartHandler}>Ajouter au panier</button>
-            ) : (
-              <Link to='/login'>
-                <button>tu doit etre connecter pour pouvoir commander</button>
+            {/* ) : (
+             <Link to='/login'>
+               <button>tu doit etre connecter pour pouvoir commander</button>
               </Link>
-            )}
+             ) */}
             <button>continue D'achat</button>
           </div>
         </div>

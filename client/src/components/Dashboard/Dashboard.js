@@ -12,18 +12,16 @@ const Dashboard = () => {
 
   return (
     <div className='dashboard'>
-        {/* <AddModel />   */}
+      {/* <AddModel />   */}
 
       <div className='dashboardContainer'>
         <Typography component='h1'>Dashboard</Typography>
 
         <div className='dashboardSummary'>
-          <div>
-           
-          </div>
+          <div></div>
           <div className='dashboardSummaryBox2'>
             <Link to='/adminproduct'>
-              <p>Product</p>
+              <p>Produits</p>
               {/* <p>{products && products.length}</p> */}
             </Link>
             <Link to='/adminorder'>
@@ -31,7 +29,7 @@ const Dashboard = () => {
               {/* <p>{orders && orders.length}</p> */}
             </Link>
             <Link to='/adminusers'>
-              <p>Users</p>
+              <p>utilisateurs</p>
               {/* <p>{users && users.length}</p> */}
             </Link>
           </div>

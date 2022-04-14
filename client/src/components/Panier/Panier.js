@@ -139,15 +139,23 @@ const Panier = () => {
             className='boxx-3'
           >
             <div className='btn btn-three' style={{ width: '200px' }}>
-              <button
-                className='buutn'
-                onClick={() => {
-                  navigate('/shipping')
-                  localStorage.setItem('cartt', JSON.stringify(items))
-                }}
-              >
-                continue D'achat
-              </button>
+              {currentuser ? (
+                <button
+                  className='buutn'
+                  onClick={() => {
+                    navigate('/shipping')
+                    localStorage.setItem('cartt', JSON.stringify(items))
+                  }}
+                >
+                  continue D'achat
+                </button>
+              ) : (
+                <Link to='/login'>
+                  <button className='buutn'>
+                    tu doit etre connecter pour pouvoir commander
+                  </button>
+                </Link>
+              )}
               {/* <button className='buutn'>co</button> */}
             </div>
           </div>
